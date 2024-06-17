@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* VARIABLES DE ESTILOS */
+:root {
+    /* Colores primarios */
+    --Amarillo: hsl(35, 77%, 62%);
+    --Rojo: hsl(5, 85%, 63%);
+
+    /* Colores neutrales */
+    --Blanco: hsl(36, 100%, 99%);
+    --Gris-claro: hsl(233, 8%, 79%);
+    --Gris-oscuro: hsl(236, 13%, 42%);
+    --Negro: hsl(240, 100%, 5%);
+
+    /* Fuentes */
+    --Fuente: 'Inter';
+}
+
+/* ESTILOS GENERALES */
+* {
+    font-family: var(--Fuente);
+}
+
+html {
+    padding: 25px 100px;
+}
+
+/* ESTILOS COLORES LETRAS */
+.negro {
+    color: var(--Negro);
+    font-weight: 800
+}
+
+.blanco {
+    color: var(--Blanco);
+}
+
+.gris {
+    color: var(--Gris-claro);
+}
+
+.gris-oscuro {
+    color: var(--Gris-oscuro);
+}
+
+.amarillo {
+    color: var(--Amarillo);
+}
+
+
+/* ESTILOS MENÚ */
+#cabecera {
+    position: relative;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion a {
+    margin-right: 50px;
+    text-decoration: none;
+    color: var(--Gris-oscuro);
+}
+
+/* ESTILOS SECCIÓN*/
+
+#seccion {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 30px;
+}
+
+.img img {
+    width: 100%;
+}
+
+#subseccion {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#izq {
+    padding-left: 20px;
+}
+
+.boton {
+    background-color: var(--Rojo);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    border: var(--Rojo);
+    width: 150px;
+}
+
+.seccion-dos {
+    background-color: var(--Negro);
+    padding: 0 40px;
+    width: 40%;
+    text-align: left;
+}
+
+/* Hacer que la seccion 1 tenga el mismo largo que la seccion 2 y que la seccion ocupe el mismo ancho que el contenedor del menu */
